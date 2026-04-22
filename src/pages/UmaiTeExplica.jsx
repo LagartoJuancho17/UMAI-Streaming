@@ -2,9 +2,9 @@ import React from 'react';
 
 function UmaiTeExplica() {
   return (
-    <div style={{ paddingTop: '100px', paddingBottom: '100px', background: 'var(--black)', minHeight: '100vh' }}>
-      <section className="section-programs" style={{ paddingBottom: '60px' }}>
-        <div className="section-header">
+    <div className="pt-24 pb-24 md:pt-32 bg-[var(--black)] min-h-screen px-6 md:px-20">
+      <section className="section-programs pb-16">
+        <div className="section-header flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-0">
           <div>
             <div className="section-eyebrow">// Programa 02</div>
             <h2 className="section-title">UMAI<br /><span className="highlight">TE EXPLICA</span></h2>
@@ -38,28 +38,28 @@ function UmaiTeExplica() {
         <div className="detail-section" style={{ marginTop: '60px' }}>
           <h3 style={{ fontFamily: "'Space Mono', monospace", color: 'var(--yellow)', marginBottom: '24px', letterSpacing: '2px' }}>ESTRUCTURA DEL EPISODIO</h3>
           <div className="events-list" style={{ marginTop: 0 }}>
-            <div className="event-row">
+            <div className="event-row flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-10">
               <div className="event-date" style={{ fontSize: '2rem' }}>5<span style={{ fontSize: '0.8rem' }}>MIN</span></div>
               <div>
                 <div className="event-title">📋 EL PARTE SEMANAL</div>
                 <div className="event-type">Novedades institucionales: fechas de inscripción, cambios de cursada, eventos próximos. El resumen que sí o sí necesitás antes del lunes.</div>
               </div>
             </div>
-            <div className="event-row">
+            <div className="event-row flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-10">
               <div className="event-date" style={{ fontSize: '2rem' }}>15<span style={{ fontSize: '0.8rem' }}>MIN</span></div>
               <div>
                 <div className="event-title">🔍 TEMA DE LA SEMANA</div>
                 <div className="event-type">Un servicio o trámite explicado de arriba a abajo. Con ejemplos reales, errores comunes y tips que no están en el sitio web.</div>
               </div>
             </div>
-            <div className="event-row">
+            <div className="event-row flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-10">
               <div className="event-date" style={{ fontSize: '2rem' }}>5<span style={{ fontSize: '0.8rem' }}>MIN</span></div>
               <div>
                 <div className="event-title">🙋 PREGUNTA DE ESTUDIANTE</div>
                 <div className="event-type">Una duda enviada por alguien de la comunidad, respondida en cámara por quien realmente sabe.</div>
               </div>
             </div>
-            <div className="event-row">
+            <div className="event-row flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-10">
               <div className="event-date" style={{ fontSize: '2rem' }}>5<span style={{ fontSize: '0.8rem' }}>MIN</span></div>
               <div>
                 <div className="event-title">📍 RECOMENDACIÓN UMAI</div>
@@ -70,7 +70,7 @@ function UmaiTeExplica() {
         </div>
       </section>
 
-      <div className="stats-bar" style={{ padding: '40px 80px', display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center', textAlign: 'center', background: 'var(--lime-green)' }}>
+      <div className="stats-bar px-6 py-10 md:px-20 flex flex-col gap-8 items-center text-center" style={{  background: 'var(--lime-green)' }}>
         <h3 style={{ fontFamily: "'Space Mono', monospace", color: 'var(--black)', letterSpacing: '2px', fontSize: '1.2rem' }}>SEGMENTOS FIJOS</h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', width: '100%' }}>
           <div style={{ background: 'rgba(0,0,0,0.1)', padding: '20px', borderRadius: '8px' }}>
@@ -97,7 +97,7 @@ function UmaiTeExplica() {
       </div>
 
       <section className="section-voices" style={{ paddingTop: '80px' }}>
-        <div className="section-header">
+        <div className="section-header flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-0">
           <div>
             <div className="section-eyebrow">// Protagonistas</div>
             <h2 className="section-title">VOCES DEL<br /><span className="highlight">PROGRAMA</span></h2>

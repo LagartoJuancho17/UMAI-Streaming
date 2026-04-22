@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer>
+    <footer className="px-6 py-10 md:p-20 grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-10 md:gap-20">
       <div>
         <div className="footer-logo">
           <span className="pink">UMAI</span><br />
@@ -34,7 +34,7 @@ function Footer() {
         </ul>
       </div>
 
-      <div className="footer-bottom">
+      <div className="footer-bottom flex-col md:flex-row text-center md:text-left gap-4 md:gap-0">
         <p>© 2026 Universidad Maimónides — TP02 Diseño Aplicado</p>
         <p>Mia Carini Rojo · Lola Mazza Oliver · Tobias Arraiza</p>
       </div>

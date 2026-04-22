@@ -2,9 +2,9 @@ import React from 'react';
 
 function EnElLab() {
   return (
-    <div style={{ paddingTop: '100px', paddingBottom: '100px', background: 'var(--black)', minHeight: '100vh' }}>
-      <section className="section-programs" style={{ paddingBottom: '60px' }}>
-        <div className="section-header">
+    <div className="pt-24 pb-24 md:pt-32 bg-[var(--black)] min-h-screen px-6 md:px-20">
+      <section className="section-programs pb-16">
+        <div className="section-header flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-0">
           <div>
             <div className="section-eyebrow">// Programa 03</div>
             <h2 className="section-title">EN EL<br /><span className="highlight">LAB</span></h2>
@@ -37,28 +37,28 @@ function EnElLab() {
         <div className="detail-section" style={{ marginTop: '60px' }}>
           <h3 style={{ fontFamily: "'Space Mono', monospace", color: 'var(--yellow)', marginBottom: '24px', letterSpacing: '2px' }}>ESTRUCTURA DEL EPISODIO</h3>
           <div className="events-list" style={{ marginTop: 0 }}>
-            <div className="event-row">
+            <div className="event-row flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-10">
               <div className="event-date" style={{ fontSize: '2rem' }}>3<span style={{ fontSize: '0.8rem' }}>MIN</span></div>
               <div>
                 <div className="event-title">🎥 LA ENTRADA</div>
                 <div className="event-type">El conductor de la semana aparece en un punto del campus y plantea la pregunta del episodio. Sin setup, sin teleprompter. Cámara en mano.</div>
               </div>
             </div>
-            <div className="event-row">
+            <div className="event-row flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-10">
               <div className="event-date" style={{ fontSize: '2rem' }}>15<span style={{ fontSize: '0.8rem' }}>MIN</span></div>
               <div>
                 <div className="event-title">🚪 EL RECORRIDO</div>
                 <div className="event-type">Se entra a un laboratorio, taller, espacio o proyecto. Se registra lo que pasa realmente. Se entrevista a quienes están ahí: investigadores, becarios, técnicos.</div>
               </div>
             </div>
-            <div className="event-row">
+            <div className="event-row flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-10">
               <div className="event-date" style={{ fontSize: '2rem' }}>10<span style={{ fontSize: '0.8rem' }}>MIN</span></div>
               <div>
                 <div className="event-title">💬 LA CHARLA</div>
                 <div className="event-type">Conversación informal con el protagonista del episodio. Preguntas que ningún periodista convencional haría.</div>
               </div>
             </div>
-            <div className="event-row">
+            <div className="event-row flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-10">
               <div className="event-date" style={{ fontSize: '2rem' }}>2<span style={{ fontSize: '0.8rem' }}>MIN</span></div>
               <div>
                 <div className="event-title">📱 EL CLIP FINAL</div>
@@ -69,7 +69,7 @@ function EnElLab() {
         </div>
       </section>
 
-      <div className="stats-bar" style={{ padding: '40px 80px', display: 'flex', flexDirection: 'column', gap: '30px', alignItems: 'center', textAlign: 'center', background: 'var(--yellow)' }}>
+      <div className="stats-bar px-6 py-10 md:px-20 flex flex-col gap-8 items-center text-center" style={{  background: 'var(--yellow)' }}>
         <h3 style={{ fontFamily: "'Space Mono', monospace", color: 'var(--black)', letterSpacing: '2px', fontSize: '1.2rem' }}>SERIES DENTRO DEL PROGRAMA</h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', width: '100%' }}>
           <div style={{ background: 'rgba(0,0,0,0.1)', padding: '20px', borderRadius: '8px' }}>
@@ -96,7 +96,7 @@ function EnElLab() {
       </div>
 
       <section className="section-voices" style={{ paddingTop: '80px' }}>
-        <div className="section-header">
+        <div className="section-header flex flex-col md:flex-row text-center md:text-left gap-6 md:gap-0">
           <div>
             <div className="section-eyebrow">// Protagonistas</div>
             <h2 className="section-title">VOCES DEL<br /><span className="highlight">PROGRAMA</span></h2>

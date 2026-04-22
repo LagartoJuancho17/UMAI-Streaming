@@ -1,4 +1,7 @@
-  :root {
+@import "tailwindcss";
+
+@layer base {
+:root {
     --hot-pink: #2073f0;
     --lime-green: #455aff;
     --deep-green: #0A6E3A;
@@ -50,7 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 48px;
+    
     background: var(--black);
     border-bottom: 3px solid var(--hot-pink);
   }
@@ -128,7 +131,7 @@
   .hero {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    
     padding-top: 88px;
     position: relative;
     overflow: hidden;
@@ -146,7 +149,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 80px 64px 80px 80px;
+    
     position: relative;
     z-index: 2;
   }
@@ -177,7 +180,7 @@
 
   .hero-title {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(5rem, 10vw, 9rem);
+    font-size: clamp(3.5rem, 10vw, 9rem);
     line-height: 0.9;
     letter-spacing: -2px;
     margin-bottom: 32px;
@@ -192,7 +195,7 @@
     font-size: 1.1rem;
     line-height: 1.7;
     color: rgba(245, 240, 232, 0.7);
-    max-width: 440px;
+    max-width: 100%;
     margin-bottom: 48px;
     animation: slideInLeft 1s ease forwards;
   }
@@ -261,7 +264,7 @@
     z-index: 2;
     background: var(--black);
     padding: 40px;
-    width: 360px;
+    width: 100%; max-width: 360px;
     border: 3px solid var(--yellow);
     transform: rotate(2deg);
     margin-top: 40px;
@@ -360,7 +363,7 @@
 
   /* PROGRAMS SECTION */
   .section-programs {
-    padding: 120px 80px;
+    
     background: var(--black);
     position: relative;
   }
@@ -383,7 +386,7 @@
 
   .section-title {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
     line-height: 0.95;
     letter-spacing: -1px;
   }
@@ -395,7 +398,7 @@
 
   .programs-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    
     gap: 2px;
   }
 
@@ -492,9 +495,9 @@
   /* STATS BAR */
   .stats-bar {
     background: var(--hot-pink);
-    padding: 60px 80px;
+    
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    
     gap: 0;
     position: relative;
     overflow: hidden;
@@ -541,7 +544,7 @@
 
   /* EVENTS */
   .section-events {
-    padding: 120px 80px;
+    
     background: #0D0D0D;
   }
 
@@ -554,7 +557,7 @@
 
   .event-row {
     display: grid;
-    grid-template-columns: 120px 1fr auto auto;
+    
     align-items: center;
     gap: 40px;
     padding: 28px 32px;
@@ -632,7 +635,7 @@
 
   /* VOICES / TEAM */
   .section-voices {
-    padding: 120px 80px;
+    
     background: var(--black);
     position: relative;
     overflow: hidden;
@@ -649,7 +652,7 @@
 
   .voices-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    
     gap: 20px;
     margin-top: 72px;
   }
@@ -745,9 +748,9 @@
   footer {
     background: var(--black);
     border-top: 3px solid var(--hot-pink);
-    padding: 80px 80px 40px;
+    
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    
     gap: 80px;
   }
 
@@ -868,3 +871,4 @@
     0% { background-position: 0% 50%; }
     100% { background-position: 200% 50%; }
   }
+}

@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <>
-      <section className="hero">
+      <section className="hero grid grid-cols-1 md:grid-cols-2 pt-[120px] md:pt-[88px]">
   <div className="hero-bg-pattern"></div>
 
   {/* Star decorations */}
   <svg className="star" style={{top: '120px', left: '60px', color: 'var(--yellow)', opacity: 0.15}} viewBox="0 0 60 60"><polygon points="30,0 36,22 60,22 41,36 47,58 30,44 13,58 19,36 0,22 24,22" fill="currentColor"/></svg>
   <svg className="star" style={{bottom: '80px', left: '400px', color: 'var(--hot-pink)', opacity: 0.12, width: '40px', height: '40px', transform: 'rotate(15deg)'}} viewBox="0 0 60 60"><polygon points="30,0 36,22 60,22 41,36 47,58 30,44 13,58 19,36 0,22 24,22" fill="currentColor"/></svg>
 
-  <div className="hero-left">
+  <div className="hero-left px-6 py-10 md:py-20 md:pr-16 md:pl-20 items-center md:items-start text-center md:text-left">
     <div className="hero-tag">🔴 Transmisión en Vivo — UMAI 2026</div>
 
     <h1 className="hero-title">
@@ -20,17 +20,17 @@ function Home() {
       <span className="line-yellow">STREAM</span>
     </h1>
 
-    <p className="hero-desc">
+    <p className="hero-desc md:max-w-[440px]">
       Ciencia, cultura y comunidad universitaria en formato streaming. Producido por estudiantes de Tecnología Multimedial de la Universidad Maimónides.
     </p>
 
-    <div className="hero-buttons">
+    <div className="hero-buttons flex-col sm:flex-row w-full sm:w-auto justify-center md:justify-start">
       <button className="btn-primary">▶ Ver Programas</button>
       <button className="btn-secondary">Conocé la U</button>
     </div>
   </div>
 
-  <div className="hero-right">
+  <div className="hero-right hidden lg:flex">
     <div className="hero-right-bg"></div>
     <div className="hero-card">
       <div className="hero-card-label">🎙 En el aire ahora</div>
@@ -82,8 +82,8 @@ function Home() {
 </div>
 
 {/* PROGRAMS */}
-<section className="section-programs">
-  <div className="section-header">
+<section className="section-programs px-6 py-16 md:px-20 md:py-32">
+  <div className="section-header flex-col md:flex-row gap-6 md:gap-0 text-center md:text-left">
     <div>
       <div className="section-eyebrow">// Formatos del Canal</div>
       <h2 className="section-title">NUESTROS<br /><span className="highlight">PROGRAMAS</span></h2>
@@ -91,7 +91,7 @@ function Home() {
     <span className="live-badge">3 Formatos</span>
   </div>
 
-  <div className="programs-grid">
+  <div className="programs-grid grid grid-cols-1 md:grid-cols-3">
     <Link to="/ciencia-sin-filtro" className="program-card card-1" style={{textDecoration: 'none'}}>
       <div className="card-bg-fill"></div>
       <div className="program-number">01</div>
@@ -124,28 +124,28 @@ function Home() {
 <div className="divider"></div>
 
 {/* STATS */}
-<div className="stats-bar">
-  <div className="stat-item">
+<div className="stats-bar px-6 py-10 md:px-20 md:py-16 grid grid-cols-2 md:grid-cols-4 gap-y-10 md:gap-y-0">
+  <div className="stat-item border-r-0 md:border-r-2">
     <div className="stat-number">28</div>
     <div className="stat-label">Carreras de Grado</div>
   </div>
-  <div className="stat-item">
+  <div className="stat-item border-r-0 md:border-r-2">
     <div className="stat-number">11K</div>
     <div className="stat-label">Estudiantes Matriculados</div>
   </div>
-  <div className="stat-item">
+  <div className="stat-item border-r-0 md:border-r-2">
     <div className="stat-number">60+</div>
     <div className="stat-label">Investigadores Activos</div>
   </div>
-  <div className="stat-item">
+  <div className="stat-item border-r-0 md:border-r-2">
     <div className="stat-number">6</div>
     <div className="stat-label">Centros de Investigación</div>
   </div>
 </div>
 
 {/* EVENTS */}
-<section className="section-events">
-  <div className="section-header">
+<section className="section-events px-6 py-16 md:px-20 md:py-32">
+  <div className="section-header flex-col md:flex-row gap-6 md:gap-0 text-center md:text-left">
     <div>
       <div className="section-eyebrow">// Agenda 2026</div>
       <h2 className="section-title">PRÓXIMOS<br /><span className="highlight">EVENTOS</span></h2>
@@ -153,7 +153,7 @@ function Home() {
   </div>
 
   <div className="events-list">
-    <div className="event-row">
+    <div className="event-row flex flex-col md:grid md:grid-cols-[120px_1fr_auto_auto] text-center md:text-left gap-6 md:gap-10">
       <div className="event-date">ABR<span>2026</span></div>
       <div>
         <div className="event-title">Lengua de Señas para Personal de Salud</div>
@@ -163,7 +163,7 @@ function Home() {
       <span className="event-arrow">→</span>
     </div>
 
-    <div className="event-row">
+    <div className="event-row flex flex-col md:grid md:grid-cols-[120px_1fr_auto_auto] text-center md:text-left gap-6 md:gap-10">
       <div className="event-date">ABR<span>2026</span></div>
       <div>
         <div className="event-title">Gestión de RRHH y Liderazgo en Salud</div>
@@ -173,7 +173,7 @@ function Home() {
       <span className="event-arrow">→</span>
     </div>
 
-    <div className="event-row">
+    <div className="event-row flex flex-col md:grid md:grid-cols-[120px_1fr_auto_auto] text-center md:text-left gap-6 md:gap-10">
       <div className="event-date">ABR<span>2026</span></div>
       <div>
         <div className="event-title">Charla Introductoria de ELA</div>
@@ -183,7 +183,7 @@ function Home() {
       <span className="event-arrow">→</span>
     </div>
 
-    <div className="event-row">
+    <div className="event-row flex flex-col md:grid md:grid-cols-[120px_1fr_auto_auto] text-center md:text-left gap-6 md:gap-10">
       <div className="event-date">ABR<span>2026</span></div>
       <div>
         <div className="event-title">Jornada SAPREF — Preservación de la Fertilidad</div>
@@ -193,7 +193,7 @@ function Home() {
       <span className="event-arrow">→</span>
     </div>
 
-    <div className="event-row">
+    <div className="event-row flex flex-col md:grid md:grid-cols-[120px_1fr_auto_auto] text-center md:text-left gap-6 md:gap-10">
       <div className="event-date">MAY<span>2026</span></div>
       <div>
         <div className="event-title">Ecografía Abdominal en Pequeños Animales</div>
@@ -220,16 +220,16 @@ function Home() {
 </div>
 
 {/* VOICES / TEAM */}
-<section className="section-voices">
+<section className="section-voices px-6 py-16 md:px-20 md:py-32">
   <div className="voices-bg"></div>
-  <div className="section-header">
+  <div className="section-header flex-col md:flex-row gap-6 md:gap-0 text-center md:text-left">
     <div>
       <div className="section-eyebrow">// Casting del Canal</div>
       <h2 className="section-title">LAS VOCES<br /><span className="highlight">DE UMAI</span></h2>
     </div>
   </div>
 
-  <div className="voices-grid">
+  <div className="voices-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
     <div className="voice-card">
       <div className="voice-role">Docente · CTS</div>
       <div className="voice-name">Dr. Pablo Kreimer</div>
